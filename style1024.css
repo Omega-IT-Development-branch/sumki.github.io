@@ -1,0 +1,265 @@
+@media (max-width: 1250px) {
+/* HEADER ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/ 
+.header-left-box{
+    gap: 12px;
+}
+.header-nav-box{
+    gap: 12px;
+} 
+.header-right-box{
+    width: 40%;
+    gap: 12px;
+}
+/*ПЕРВАЯ СЕКЦИЯ СО СЛАЙДЕРОМ ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+.swiper-main .swiper-button-next, 
+.swiper-main .swiper-button-prev{
+    width: 48px!important;
+    height: 48px!important;
+}
+.advantage-item{
+    width: calc(50% - 33px);
+}
+/* СЕКЦИЯ КАТАЛОГА //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*Большая картинка*/
+.catalog-big-image-box{
+    gap: 32px;
+}
+.catalog-big-image{
+    height: 80vh;
+}
+.catalog-filter-box{
+    margin: 32px 0;
+}
+.catalog-filter-right-box{
+    padding-right: 50px;
+}
+/*Один продукт*/
+.product-box{
+    margin-bottom: 32px;
+}
+.product-item{
+    width: calc(50% - 56px);
+}
+/* ПОПУЛЯРНЫЕ БРЕНДЫ ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+.popular-brands-box{
+    margin-bottom: 32px;
+}
+.popular-brands-item{
+    width: calc(33% - 4px);
+    padding: 100px 0;
+}
+/* КОНТАКТНАЯ ИНФОРМАЦИЯ ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+.contact-item p:nth-child(1){
+    width: 50%;
+}
+/*СТРАИЦА ТОВАРА //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+.one-product-color{
+    width: 80px;
+    height: 80px;
+}
+.one-product-btn-box a{
+    width: calc(100% - 72px);
+}
+/* КОРЗИНА /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+.shop-product-box{
+    width: 100%;
+}
+.shop-product-item-box{
+    gap: 12px;
+}
+.shop-product-item>div{
+    width: 33%;
+}
+.shop-check{
+    margin-right: 12px;
+}
+.shop-photo-product{
+    width: 80px;
+    height:80px;
+}
+.shop-count-box{
+    gap: 8px;
+}
+.shop-count-box p{
+    width: 48px;
+}
+.shop-plus-minus-img{
+    width: 48px;
+    height: 48px;
+}
+.shop-result-price-main-box2{
+    width: calc(60% - 5vw);
+}
+/* ОФОРИЛЕНИЕ ЗАКАЗА ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+.order-check-box-persanal{
+    flex-wrap: nowrap;
+}
+/* РЕГИСТРАЦИЯ ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+.registr-btn-box a{
+    width: calc(100% - 72px);
+}
+/* ЛИЧНЫЙ КАБИНЕТ //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+.account-persanal-box,
+.account-delete-box{
+    width: calc(50% - 21px);
+}
+.account-persanal-box>a{
+    width: calc(70% - 68px);
+}
+.account-delete-box>a{
+    width: calc(70% - 68px);
+}
+/* ДЕТАЛЬНЫЙ ЗАКАЗ //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+.detail-product-box{
+    width: calc(100% - 3vw);
+}
+.shop-result-price-main-box{
+    width: calc(60% - 3vw);
+}
+/*COOCKIE /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+.coockie-main-box{
+    gap: 24px;
+    padding: 12px 0;
+}
+.coockie-main-box>p{
+    width: calc(100%);
+}
+.coockie-btn-box{
+    width: calc(100%);
+}
+/* ИЗБРАННОЕ ВЫПАДАШКА  /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+.block{
+    width: 80%;
+}
+.like-top{
+    margin-bottom: 24px;
+}
+/* ФИЛЬТРЫ /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+.filter-head{
+    justify-content: space-between;
+    margin-bottom: 32px;
+}
+.filter-main-box{
+    gap: 21px;
+}
+/*ВЫПАДАЮЩИЕ ССЫЛКИ БУРГЕРА ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+.burger-menu{
+    width: 100%;
+    gap: 50px;
+    padding-bottom: 80px;
+}
+.menu-item{
+    width: calc(50% - 25px);
+    gap: 32px;
+}
+.menu-item-photo{
+    width: calc(50% - 25px);
+    gap: 32px;
+}
+.menu-item-photo img{
+    display: none;
+}
+/* КОРЗИНА ВСПЛЫВАЮЩАЯ /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+.shop-block{
+    width: 100%;
+    gap: 50px;
+}
+.shop-block-main-box{
+    width: 100%;
+    gap: 24px;
+}
+.shop-product-name-box{
+    width: 100%;
+    justify-content: space-between;
+}
+.shop-product-name-box>div:last-child{
+    align-items: end;
+}
+.shop-block-one-product{
+    width: 100%;
+    gap: 8px;
+    align-items: end;
+    justify-content: space-between;
+}
+.shop-block-color{
+    width: 100%;
+    gap: 8px;
+    align-items: end;
+}
+.shop-block-analog-box{
+    gap: 8px;
+}
+.shop-block-analog-item{
+    justify-content: space-between;
+    align-items: center;
+}
+.shop-block-analog{
+    gap: 24px;
+    align-items: center;
+}
+.shop-block-plus-icon{
+    width: 24px;
+    height: 24px;
+}
+.shop-block-btn-box{
+    gap: 8px;
+}
+.sticky{
+    position: sticky;
+    bottom: 0;
+    gap: 24px;
+}
+
+/* FOOTER /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+footer{
+    padding-top: 96px;
+    background-color: var(--black);
+    color: var(--white);
+}
+footer a, footer p{
+    color: var(--white);
+}
+.footer-top{
+    width: 100%;
+    gap: 48px;
+    margin-bottom: 48px;
+}
+.footer-top-box{
+    width: calc(50% - 24px);
+}
+.footer-top-link-box{
+    width: 100%;
+    gap: 8px;
+}
+.footer-top-link-box>div{
+    width: calc(50% - 8px);
+    gap: 24px;
+}
+.footer-other-information{
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 48px;
+}
+.footer-text-information{
+    width: 50%;
+}
+.footer-text-information p:last-child{
+    color: var(--white-48);
+}
+.social-box{
+    width: calc(50% - 160px);
+    justify-content: flex-end;
+    gap: 32px;    
+    padding-right: 160px;
+}
+.social-icon{
+    width: 48px;
+    height: 48px;
+}
+.bottom-img{
+    width: 100%;
+    height: 360px;
+}
+}

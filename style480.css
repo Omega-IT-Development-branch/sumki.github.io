@@ -1,0 +1,377 @@
+@media (max-width: 480px){
+    h2{
+        margin-bottom: 32px;
+    }
+    h4{ /*УТОЧНИТЬ РАЗМЕР МОБИЛКИ*/
+        margin-bottom: 48px;
+    }
+    .sub-h2{
+        font-family: 'Cormorant-Regular'; 
+        font-size: clamp(24px, 2vw, 48px);
+        margin-bottom: 24px;
+    }
+    .mobile{
+        display: flex;
+    }
+    .btn-black{
+        padding: 8px 16px;
+    }
+    .btn-gray{
+        padding: 8px 16px;
+    }
+    /* HEADER ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/ 
+    .header-left-box,
+    .header-right-box{
+        width: calc(30% - 32px);
+        padding: 0;
+    }
+    .header-nav-box-mobile{
+        width: 100%;
+        justify-content: space-between;
+        overflow-x: scroll;
+    } 
+    /*ПЕРВАЯ СЕКЦИЯ СО СЛАЙДЕРОМ ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+    .swiper-main{
+        margin-bottom: 16px;
+    }
+    .swiper-main .swiper-slide-active{
+        width: 100%!important;
+    }
+    .swiper-main .swiper-button-next, .swiper-main .swiper-button-prev{
+        display: none!important;
+    }
+    .swiper-main .advantage-box{
+        gap: 8px;
+    }
+    .swiper-main .advantage-item{
+        gap: 16px;
+        width: calc(100%);
+    }
+    .swiper-main .advantage-img{
+        width: 80px;
+        height: 80px;
+    }
+    .swiper-main .advantage-item p{
+        width: calc(100% - 96px);
+    }   
+    /* СЕКЦИЯ КАТАЛОГА //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+    /*Большая картинка*/
+    .catalog-big-image-box{
+        gap: 24px;
+    }
+    .catalog-big-image{
+        width: 100%;
+        height: 100vh;
+    }
+    .catalog-filter-box{
+        justify-content: space-between;
+        margin: 32px 0;
+        gap: 32px;
+    }
+    .catalog-filter-left-box{
+        gap: 32px;
+        overflow-x: scroll;
+        width: 95vw;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+    }
+    .catalog-filter-left-box li>p{
+        white-space: nowrap;
+    }
+    .catalog-filter-right-box{
+        gap: 32px;
+        padding-right: 145px;
+    }
+    .catalog-filter-right-box li{
+        width: 100%;
+    }
+    .catalog-filter-item{
+        justify-content: flex-end;
+    }
+    /*Один продукт*/
+    .product-box{
+        gap: 8px;
+        width: 100%;
+        margin-bottom: 32px;
+    }
+    .product-item{
+        width: calc(50% - 20px);
+        padding:8px;
+        background-color: var(--gray);
+        justify-content: flex-end;
+        border-radius: 8px;
+    }
+    .product-img{
+        width: 100%;
+        height: max-content;
+        margin-bottom: 21px;
+    }
+    .product-name-price{
+        justify-content: space-between;
+    }
+    .miniSwiperNoLoopProduct .product-box{
+        gap: 0px;
+    }
+    .miniSwiperNoLoopProduct .product-item{
+        margin-right: 8px!important;
+    }
+    /*Посмотреть еще*/
+    .product-add-box{
+        width: 100%;
+        position: relative;
+    }
+    .product-add-center{
+        position: relative;
+        text-align: center;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding-top: 32px;
+    }
+    .sale-box{
+        width: max-content;
+        padding: 8px;
+        background-color: var(--white-48);
+        border-radius: 4px;
+    }
+    .sale-box span{
+        color: var(--red);
+    }
+    /* ПОПУЛЯРНЫЕ БРЕНДЫ ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+    .popular-brands-box{
+        display: none;
+    }
+    .mini-swiper-mobile{
+        display: flex!important;
+    }
+    .popular-brands-item{
+        width: 100%;
+    }
+    /* НАШ БЛОГ /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+    .blog-box{
+        width: 100%;
+        gap: 8px;
+    }
+    .blog-item{
+        width: 100%;
+    }
+    .blog-img{
+        display: none;
+    }
+    .blog-img.mobile{
+        width: 100%;
+        display: flex;
+        order: 0;
+        margin-bottom: 32px;
+    }
+    .blog-text{
+        width: calc(95%);
+        margin: 0 auto;
+        padding: 0;
+        margin-bottom: 64px;
+    }
+    /*ЧАСТЫЕ ВОПРОСЫ ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+    .questions-box{
+        width: 100%;
+        gap: 32px;
+    }
+    .questions-item{
+        width: 100%;
+        align-items: center;
+        justify-content: space-between;
+        gap: 0px;
+    }
+    .questions-item p{
+        width: 80%;
+        margin-bottom: 0px;
+    }
+    .plus-icon{
+        width: 24px;
+        height: 24px;
+    }
+    /*СТРАИЦА ТОВАРА //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+    .one-product-main-box{
+        width: 100%;
+        justify-content: space-between;
+    }
+    .one-product-color-box{
+        height: max-content;
+        overflow-x: scroll;
+        flex-wrap: nowrap;
+    }
+    .one-product-img-box{
+        display: none;
+    }
+    .one-product-btn-box{
+        margin-bottom: 32px;
+    }
+    .one-product-btn-box a{
+        width: calc(100%);
+    }
+    .one-product-additional-box{
+        margin-bottom: 32px;
+    }
+    /* СТРАНИЦА КАТАЛОГ /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/   
+    .bread-crumbs-catalog-first{
+        margin-bottom: 32px;
+    }
+    .catalog-first-img{
+        width: 100%;
+    }
+    .catalog-first-text{
+        width: calc(100%);
+        padding: 0;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    .catalog-first-text h2{
+        margin: 0;
+        margin-bottom: 32px;
+    }
+    .catalog-first-text a{
+        margin: 0;
+    }    
+    /* КОРЗИНА /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+    .product-box-slider{
+        display: none;
+    }
+    .shop-main-box{
+        gap: 5vw;
+        width: 100%;
+    }
+    .shop-product-box{
+        width: calc(100%);
+        flex-wrap: nowrap;
+    }
+    .shop-delete-product{
+        width: 100%;
+        gap: 24px;
+    }
+    .shop-check{
+        display: none;
+    }
+    .shop-product-item>div:nth-child(2){
+        margin-left: 0px;
+    }
+    /* ОФОРМИЛЕНИЕ ЗАКАЗА /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+    .order-input{
+        width: calc(100%);
+    }
+    /* ЛИЧНЫЙ КАБИНЕТ /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+    .account-date-period-box{
+        width: 100%;
+    }
+    .account-date-input{
+        width: calc(100%);
+    }
+    .account-period-box>a{
+        width: 100%;
+    }
+    .account-status-box{
+        display: none;
+    }
+    .mobile-none{
+        display: none;
+    }
+    .account-order-table.mobile{
+        display: flex;
+    }
+    .account-order-table-head{
+        text-align: start;
+        align-items: start;
+    }
+    .account-order-table-item:nth-child(1),
+    .account-order-table-item:nth-child(2),
+    .account-order-table-item:nth-child(3),
+    .account-order-table-item:nth-child(4){
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        text-align: start;
+        margin-bottom: 16px;
+        gap: 8px;
+    }
+    .account-order-table-item p{
+        width: calc(50% - 8px);
+    }
+    .account-order-table-item p:nth-child(2){
+        text-align: end;
+    }
+    .account-like-table-item:nth-child(2){
+        width: 60%;
+    }
+    .account-like-table-item:nth-child(3){
+        width: 40%;
+        text-align: end;
+    }
+    /* ДЕТАЛЬНЫЙ ЗАКАЗ //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+    .detail-product-item>div{
+        width: 100%;
+        margin-bottom: 12px;
+    }
+    .detail-product-item>div:nth-child(2){
+        width: 50%;
+        text-align: start;
+        justify-content: start;
+    }
+    .detail-product-item>div:nth-child(3){
+        width: 50%;
+    }
+    .shop-count-box .mobile {
+        display: contents;
+        flex-direction: row;
+        text-align: left;
+    }
+    .shop-count-box p {
+        width: max-content; 
+    }
+    /*COOCKIE //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+    .coockie-main-box{
+        justify-content: end;
+    }
+    .btn-close{
+        display: none;
+    }
+    .btn-close-mobile{
+        width: 64px;
+        height: 64px;
+        align-self: end;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+    .coockie-btn-box a{
+        width: 100%;
+    }
+    /*ВЫПАДАЮЩИЕ ССЫЛКИ БУРГЕРА ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+    .menu-item{
+        width: calc(100%);
+        gap: 0px;
+    }
+    .menu-item-photo{
+        width: calc(100%);
+        gap: 12px;
+    }
+    .menu-social-block{
+        gap: 24px;
+    }
+    /* КОРЗИНА ВСПЛЫВАЮЩАЯ /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+    .shop-block-one-product .shop-photo-product{
+        margin-right: calc(100% - 160px);
+    }
+    /* FOOTER /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+    
+    .footer-top{
+        gap: 32px;
+        margin-bottom: 32px;
+    }
+    .footer-top-box{
+        width: calc(100%);
+    }
+    .footer-top-link-box{
+        gap: 32px;
+    }
+    .footer-top-link-box>div{
+        width: calc(100%);
+        gap: 24px;
+    }
+}
