@@ -121,6 +121,7 @@
 .coockie-main-box{
     gap: 24px;
     padding: 12px 0;
+    width: 100%;
 }
 .coockie-main-box>p{
     width: calc(100%);

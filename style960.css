@@ -3,6 +3,9 @@
 .mobile{
     display: flex;
 }
+.btn-close-mobile{
+    display: none;
+}
 /* HEADER ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/ 
 .header-nav-box{
     display: none;
@@ -477,5 +480,8 @@
     gap: 32px;    
     padding-right: 0;
     order: -1;
+}
+.modalburgerAll {
+    top: 205px;
 }
 }

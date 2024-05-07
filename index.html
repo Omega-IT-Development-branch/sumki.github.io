@@ -14,17 +14,109 @@
     </head>
     <body>
         <header class="wrapper content"> 
+            <div class="flex row-flex status-bar">
+                <div class="status-bar-red"></div>
+                <div class="status-bar-black"></div>
+                <p>До минимального заказа 6 490 рублей</p>
+            </div>
             <div class="flex row-flex header">
                 <div class="flex row-flex header-left-box">
-                    <div class="flex burger">
-                        <img src="img/Icon/Default/Menu.svg"><!--БУРГЕР-->
+                    <div id="modalburgerbtn" class="flex burger">
+                        <img src="img/Icon/Default/Menu.svg">
+                    </div>
+
+                    <div id="modalburger" class="flex modalburger">
+                        <div class="flex row-flex content modalburger-content">
+                            <div class="flex row-flex burger-menu">
+                                <div class="flex column-flex menu-item">
+                                    <h4>КАТАЛОГ</h4>
+                                    <div class="flex column-flex menu-link">
+                                        <a>Женские товары</a>
+                                        <a>Мужские товары</a>
+                                        <a>аксессуары</a>
+                                        <a>Новинки</a>
+                                        <a class="red-txt">Распродажа</a>
+                                        <a>Для маркетплейсов</a>
+                                        <a>Перейти в каталог +</a>
+                                    </div>
+                                </div>
+                
+                                <div class="flex column-flex menu-item">
+                                    <h4>КОМПАНИЯ</h4>
+                                    <div class="flex column-flex menu-link">
+                                        <a>О нас</a>
+                                        <a>Партнерам</a>
+                                        <a>Корпоративным клиентам</a>
+                                        <a>Публичная оферта</a>
+                                    </div>
+                                </div>
+                
+                                <div class="flex column-flex menu-item">
+                                    <h4>ПОКУПАТЕЛЯМ</h4>
+                                    <div class="flex column-flex menu-link">
+                                        <a>Как купить</a>
+                                        <a>оплата и Доставка</a>
+                                        <a>Возврат и обмен</a>
+                                        <a>Акции и скидки</a>
+                                        <a>Статьи</a>
+                                        <a>Отзывы</a>
+                                    </div>
+                                </div>
+                
+                                <div class="flex column-flex menu-item">
+                                    <h4>ОБРАТНАЯ СВЯЗЬ</h4>
+                                    <div class="flex column-flex menu-link">
+                                        <a>8 (800) 500 28 58</a>
+                                        <a>Info@S_Style.com</a>
+                                        <div class="flex row-flex menu-social-block">
+                                            <div><img src="img/Icon/Social/telegram-1 1w.svg"></div>
+                                            <div><img src="img/Icon/Social/telegram-1 2w.svg"></div>
+                                            <div><img src="img/Icon/Social/telegram-1 3w.svg"></div>
+                                            <div><img src="img/Icon/Social/telegram-1 4w.svg"></div>
+                                        </div>          
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
                     <ul class="flex row-flex header-nav-box">
-                        <li class="flex column-flex header-nav-item ">
+                        <li id="modalburgerbtnZH" class="flex column-flex header-nav-item ">
                             <p class="special-text">Выбранно</p>
                             <a href="catalog.html" class="bold-txt">ЖЕНСКОЕ</a>
                         </li>
+                        
+                        <div id="modalburgerZH" class="flex modalburgerAll">
+                            <div class="flex row-flex burger-menu modalburgerAll-content">
+                                <div class="flex row-flex burger-menu">
+                                    <div class="flex column-flex menu-item-photo">
+                                        <div class="flex column-flex menu-link">
+                                            <a class="bold-txt">Женские товары</a>
+                                            <a>Мужские товары</a>
+                                            <a>аксессуары</a>
+                                            <a>Новинки</a>
+                                            <a  class="red-txt">Распродажа</a>
+                                            <a>Для маркетплейсов</a>
+                                            <a>Перейти в каталог +</a>
+                                        </div>
+                                    </div>
+                    
+                                    <div class="flex column-flex menu-item-photo">
+                                        <div class="flex column-flex menu-link">
+                                            <a class="bold-txt">О нас</a>
+                                            <a>Партнерам</a>
+                                            <a>Корпоративным клиентам</a>
+                                            <a>Публичная оферта</a>
+                                        </div>
+                                    </div>
+                    
+                                    <div class="flex column-flex menu-item-photo">
+                                        <img src="img/img.png">
+                                    </div>           
+                                </div>
+                            </div>
+                        </div>
+
                         <li class="flex column-flex header-nav-item">
                             <p class="special-text"></p>
                             <p>МУЖСКОЕ</p>
@@ -40,27 +132,284 @@
                 
                 <div class="flex row-flex header-right-box">
                     <a href="#" class="bold-txt">8 (800) 500 28 58</a>
-                    <div class="header-search-icon"><img src="img/Icon/Default/Search.svg"></div>
-                    <div class="header-search-icon"><img src="img/Icon/Default/Bag_8.svg"></div>
-                    <a href="search.html" class="header-search-icon"><img src="img/img.png"></a>
+                    <a id="btnlike" class="header-search-icon"><img src="img/Icon/Default/Favorite_16.svg"></a>
+                    <div id="modallike" class="flex modal50">
+                        <div class="flex column-flex like-block block modal-content50">
+                            <div class="flex row-flex like-top">
+                                <h4>ИЗБРАННОЕ</h4>
+                                <div id="btn-close-like" class="btn-close"><img src="img/Icon/Default/Ellipse 1593.svg"></div>
+                            </div>
+                            <div class="flex column-flex account-like-table">
+                                <div class="flex row-flex account-like-table-head">
+                                    <div class="flex account-like-table-item">
+                                        <p class="semi-bold-txt">ТОВАР</p>
+                                    </div>
+                                    <div class="flex account-like-table-item">
+                                        <p></p>
+                                    </div>   
+                                    <div class="flex account-like-table-item">
+                                        <p class="semi-bold-txt">ЦЕНА</p>
+                                    </div>
+                                </div>                            
+                                <div class="flex row-flex account-like-table-content">
+                                    <div class="flex account-like-table-item">
+                                        <div class="flex row-flex shop-product-center-box">
+                                            <input class="shop-check" type="checkbox">
+                                            <div class="shop-photo-product"><img src="img/index/376-nude-1-2 1.png"></div>
+                                            <div class="flex column-flex shop-product-name-box2">
+                                                <p class="special-text">Женская сумка</p>
+                                                <p class="bold-txt">KORTNI</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="flex account-like-table-item">
+                                        <a class="btn-black">В КОРЗИНУ</a>
+                                        <div class="flex row-flex account-like-count-box">
+                                            <div class="shop-plus-minus-img"><img src="img/Icon/Default/Minus.svg"></div>
+                                            <p class="bold-txt">1</p>
+                                            <div class="shop-plus-minus-img"><img src="img/Icon/Default/Plus.svg"></div>
+                                        </div>
+                                    </div>
+                                    <div class="flex account-like-table-item">
+                                        <div class="flex column-flex">
+                                            <p class="special-text special-text-price">10 000 000 RUB</p>
+                                            <p class="bold-txt">1 000 000 RUB</p>
+                                        </div>
+                                    </div>
+                                </div>     
+                                <div class="flex row-flex account-like-table-content">
+                                    <div class="flex account-like-table-item">
+                                        <div class="flex row-flex shop-product-center-box">
+                                            <input class="shop-check" type="checkbox">
+                                            <div class="shop-photo-product"><img src="img/index/189-sandrift-1.png"></div>
+                                            <div class="flex column-flex shop-product-name-box2">
+                                                <p class="special-text">Женская сумка</p>
+                                                <p class="bold-txt">KORTNI</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="flex account-like-table-item">
+                                        <a class="btn-black">В КОРЗИНУ</a>
+                                        <div class="flex row-flex account-like-count-box">
+                                            <div class="shop-plus-minus-img"><img src="img/Icon/Default/Minus.svg"></div>
+                                            <p class="bold-txt">1</p>
+                                            <div class="shop-plus-minus-img"><img src="img/Icon/Default/Plus.svg"></div>
+                                        </div>
+                                    </div>
+                                    <div class="flex account-like-table-item">
+                                        <p class="bold-txt">1 000 000 RUB</p>
+                                    </div>
+                                </div>                            
+                            </div>
+                            <a class="btn-gray">ОЧИСТИТЬ</a>
+                        </div>
+                    </div>
+
+                    <a id="modalshopbtn" class="header-search-icon"><img src="img/Icon/Default/Bag_8.svg"></a>
+                    <div id="modalshop" class="flex modal50">
+                        <div class="flex column-flex block modal-content50">
+                            <div class="flex row-flex filter-head">
+                                <h4>КОРЗИНА</h4>
+                                <div id="btn-close-shop" class="btn-close"><img src="img/Icon/Default/Ellipse 1593.svg"></div>
+                            </div>
+            
+                            <div class="flex column-flex shop-block">
+                                <div class="flex column-flex shop-block-main-box">
+                                    <div class="flex row-flex shop-product-name-box">
+                                        <div class="flex column-flex">
+                                            <p class="special-text">Женская сумка</p>
+                                            <p class="bold-txt">ЖЕНСКАЯ СУМКА KORTNI</p>
+                                        </div>
+                                        <div class="flex row-flex">
+                                            <p class="bold-txt">9 990 RUB</p>
+                                        </div>
+                                    </div>
+                
+                                    <div class="flex row-flex shop-block-one-product">
+                                        <div class="shop-photo-product"><img src="img/account/380-black-1-copy.png"></div>
+                                        <div class="flex row-flex shop-count-box">
+                                            <div class="shop-plus-minus-img"><img src="img/Icon/Default/Plus.svg"></div>
+                                            <p>1</p>
+                                            <div class="shop-plus-minus-img"><img src="img/Icon/Default/Plus.svg"></div>
+                                        </div>
+                                        <a class="btn-gray">УДАЛИТЬ</a>
+                                    </div>
+                
+                                    <div class="flex column-flex">
+                                        <p class="special-text">Другие цвета</p>
+                                        <div class="flex row-flex shop-block-color">
+                                            <div class="shop-photo-product"><img src="img/product-page/427-malbec-1.png"></div>
+                                            <div class="shop-photo-product"><img src="img/product-page/427-nude-1.png"></div>
+                                            <div class="shop-photo-product"><img src="img/product-page/427-black-1 1.png"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                
+                                <div class="flex column-flex shop-block-main-box">
+                                    <p class="bold-txt">ПОХОЖИЕ ТОВАРЫ</p>
+                                    <ul class="flex column-flex shop-block-analog-box">
+                                        <li class="flex row-flex shop-block-analog-item">
+                                            <div class="flex row-flex shop-block-analog">
+                                                <div class="shop-photo-product"><img src="img/index/427-blacktweed-1 2.png"></div>
+                                                <div class="flex column-flex">
+                                                    <p class="special-text">Женская сумка</p>
+                                                    <p class="bold-txt">4 790 RUB</p>
+                                                </div>
+                                            </div>
+                                            <div class="shop-block-plus-icon"><img src="img/Icon/Default/Plus.svg"></div>
+                                        </li>
+                                        <li class="flex row-flex shop-block-analog-item">
+                                            <div class="flex row-flex shop-block-analog">
+                                                <div class="shop-photo-product"><img src="img/index/426-almond-1 1-1.png"></div>
+                                                <div class="flex column-flex">
+                                                    <p class="special-text">Женская сумка</p>
+                                                    <p class="bold-txt">4 790 RUB</p>
+                                                </div>
+                                            </div>
+                                            <div class="shop-block-plus-icon"><img src="img/Icon/Default/Plus.svg"></div>
+                                        </li>
+                                        <li class="flex row-flex shop-block-analog-item">
+                                            <div class="flex row-flex shop-block-analog">
+                                                <div class="shop-photo-product"><img src="img/index/399-malbec-1.png"></div>
+                                                <div class="flex column-flex">
+                                                    <p class="special-text">Женская сумка</p>
+                                                    <p class="bold-txt">4 790 RUB</p>
+                                                </div>
+                                            </div>
+                                            <div class="shop-block-plus-icon"><img src="img/Icon/Default/Plus.svg"></div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="flex column-flex sticky">
+                                <div class="flex column-flex shop-block-btn-box">
+                                    <p class="bold-txt">ПРИМЕЧАНИЕ</p>
+                                    <p class="special-text red-txt">До минимального заказа осталось 10 рублей</p>
+                                </div>
+                
+                                <div class="flex column-flex shop-block-btn-box">
+                                    <a class="btn-black">К ОПЛАТЕ 9 990 RUB</a>
+                                    <a class="btn-gray gray-txt">ОЧИСТИТЬ</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a id="btnsearch" class="header-search-icon"><img src="img/Icon/Default/Search.svg"></a>
+                    <div id="btn-close-search" class="btn-close"><img src="img/Icon/Default/Ellipse 1593.svg"></div>
+                    <div id="modalsearch" class="flex modalsearch">
+                        <div class="flex row-flex content modalsearch-content">
+                            <div class="flex column-flex search-product-main-box">
+                                <ul class="flex row-flex search-product-box">
+                                    <li class="flex column-flex search-product-item">
+                                        <a href="#"  class="flex column-flex">
+                                            <div class="product-img"><img src="img/index/becee406d0bd54be12547b00a3ab407c 1.png"></div>
+                                            <p class="special-text">Женский рюкзак</p>
+                                            <div class="flex row-flex product-name-price">
+                                                <p class="bold-txt">UKKA</p>
+                                                <p class="bold-txt">5 990 RUB</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="flex column-flex search-product-item">
+                                        <a href="#" class="flex column-flex">
+                                            <div class="product-img"><img src="img/index/189-sandrift-1.png"></div>
+                                            <p class="special-text">Женский рюкзак</p>
+                                            <div class="flex row-flex product-name-price">
+                                                <p class="bold-txt">UKKA</p>
+                                                <p class="bold-txt">5 990 RUB</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <a href="search.html" class="btn-black">ВСЕ РЕЗУЛЬТАТЫ</a>
+                            </div>
+                            <div class="flex column-flex search-text-main-box">
+                                <div>
+                                    <input type="text" class="search-input-txt">
+                                </div>
+                                <ul class="flex column-flex search-result-txt">
+                                    <li>
+                                        <p class="regular-text">1593-1Y black Polina&Eiterou</p>
+                                    </li>
+                                    <li>
+                                        <p class="regular-text">water green Polina&Eiterou</p>
+                                    </li>
+                                    <li>
+                                        <p class="regular-text">brown Vitelli Grassi</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
                 <ul class="flex row-flex header-nav-box-mobile mobile">
-                    <li class="flex column-flex header-nav-item-mobile">
+                    <li id="modalburgerbtnZHm" class="flex column-flex header-nav-item-mobile">
                         <p class="special-text">Выбранно</p>
-                        <a href="catalog.html" class="bold-txt">ЖЕНСКОЕ</a>
+                        <a class="bold-txt">ЖЕНСКОЕ</a>
+                    </li>
+                    <div id="modalburgerZHm" class="flex modalburgerAll">
+                        <div class="flex row-flex burger-menu modalburgerAll-content">
+                            <div class="flex row-flex burger-menu">
+                                <div class="flex column-flex menu-item-photo">
+                                    <div class="flex column-flex menu-link">
+                                        <a class="bold-txt">Женские товары</a>
+                                        <a>Мужские товары</a>
+                                        <a>аксессуары</a>
+                                        <a>Новинки</a>
+                                        <a  class="red-txt">Распродажа</a>
+                                        <a>Для маркетплейсов</a>
+                                        <a>Перейти в каталог +</a>
+                                    </div>
+                                </div>
+                
+                                <div class="flex column-flex menu-item-photo">
+                                    <div class="flex column-flex menu-link">
+                                        <a class="bold-txt">О нас</a>
+                                        <a>Партнерам</a>
+                                        <a>Корпоративным клиентам</a>
+                                        <a>Публичная оферта</a>
+                                    </div>
+                                </div>
+                
+                                <div class="flex column-flex menu-item-photo">
+                                    <img src="img/img.png">
+                                </div>           
+                            </div>
+                        </div>
+                    </div>
+
+                    <li class="flex column-flex header-nav-item-mobile">
+                        <p class="special-text"></p>
+                        <a>МУЖСКОЕ</a>
                     </li>
                     <li class="flex column-flex header-nav-item-mobile">
                         <p class="special-text"></p>
-                        <a href="catalog.html">МУЖСКОЕ</a>
-                    </li>
-                    <li class="flex column-flex header-nav-item-mobile">
-                        <p class="special-text"></p>
-                        <a href="catalog.html">АКСЕССУАРЫ</a>
+                        <a>АКСЕССУАРЫ</a>
                     </li>
                 </ul>
             
             </div>
+
+            <div class="flex row-flex coockie-main-box">
+                <div id="btn-close1m" class="btn-close-mobile mobile"><img src="img/Icon/Default/Ellipse 1593.svg"></div>
+                <p>Нажимая кнопку «Принять», вы соглашаетесь на сохранение файлов cookie на вашем устройстве для улучшения навигации по сайту, анализа использования сайта и помощи в наших маркетинговых усилиях.</p>
+                <div class="flex row-flex coockie-btn-box">
+                    <a class="btn-black">УЗНАТЬ ПОДРОБНЕЕ</a>
+                    <a class="btn-gray">ПРИНЯТЬ</a>
+                    <btn id="btn-close1" class="btn-close" onclick="close"><img src="img/Icon/Default/Ellipse 1593.svg"></btn>
+                </div>
+            </div>
+
+            <script>
+                document.getElementById("btn-close1").onclick = function() {
+                    document.getElementsByClassName("coockie-main-box")[0].style.display = 'none';
+                };
+                document.getElementById("btn-close1m").onclick = function() {
+                    document.getElementsByClassName("coockie-main-box")[0].style.display = 'none';
+                };
+            </script>
         </header>
 
         <main class="wrapper">
@@ -149,10 +498,146 @@
                                 <p class="special-text gray-txt">Сортировать по</p>
                                 <p class="bold-txt">НАЗВАНИЯМ</p>
                             </li>
-                            <li class="flex column-flex catalog-filter-item">
+                            <li id="modalfilterbtn1" class="flex column-flex catalog-filter-item">
                                 <p class="special-text gray-txt">Фильтр</p>
                                 <p class="bold-txt">НАСТРОИТЬ</p>
                             </li>
+                            <div id="modalfilterone" class="flex modal50">
+                                <div class="flex column-flex block modal-content50">
+                                    <div class="flex row-flex filter-head">
+                                        <h4>ФИЛЬТРЫ</h4>
+                                        <div id="btn-close-filter1" class="btn-close"><img src="img/Icon/Default/Ellipse 1593.svg"></div>
+                                    </div>
+                                    <div class="flex row-flex filter-main-box">
+                                        <div class="flex column-flex filter-main-box">
+                                            <div class="flex row-flex filter-check-box">
+                                                <p class="bold-txt">СО СКИДКОЙ</p>
+                                                <div>
+                                                    <label class="toggle">
+                                                        <input class="toggle-checkbox" type="checkbox">
+                                                        <div class="toggle-switch"></div>
+                                                    </label>
+                                                </div>
+                                            </div>
+                        
+                                            <div class="flex row-flex filter-check-box">
+                                                <p class="bold-txt">В НАЛИЧИИ</p>
+                                                <div>
+                                                    <label class="toggle">
+                                                        <input class="toggle-checkbox" type="checkbox" checked>
+                                                        <div class="toggle-switch"></div>
+                                                    </label>
+                                                </div>
+                                            </div>
+                        
+                                            <div class="flex column-flex filter-box">
+                                                <p class="bold-txt">ЦЕНА</p>
+                                                <div>ДВИГАЛКА ЦЕНЫ</div>
+                                                <div class="flex row-flex filter-max-min-price">
+                                                    <p class="bold-txt">1 200 RUB</p>
+                                                    <p class="bold-txt">5 680 RUB</p>
+                                                </div>
+                                            </div>
+                        
+                                            <div class="flex column-flex filter-box">
+                                                <div class="flex row-flex filter-color-box">
+                                                    <div class="flex row-flex filter-color-head-box">
+                                                        <p class="bold-txt">ЦВЕТА</p>
+                                                        <p class="count-filter">1</p>
+                                                    </div>
+                                                    <div class="flex row-flex filter-color-head-box">
+                                                        <p class="red-txt">ОЧИСТИТЬ</p>
+                                                        <div class="filter-color-img"><img src="img/Icon/Default/Trash.svg"></div>
+                                                    </div>
+                                                </div>
+                                                <ul class="flex row-flex one-color-box">
+                                                    <li class="one-color-img" style="background-color: black;">
+                                                        <p>/</p>
+                                                    </li>
+                                                    <li class="one-color-img" style="background-color: red;" >
+                                                        <p></p>
+                                                    </li>
+                                                    <li class="one-color-img" style="background-color: blueviolet;">
+                                                        <p></p>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                        
+                                            <div class="flex column-flex filter-box">
+                                                <div class="flex row-flex filter-color-box">
+                                                    <div class="flex row-flex filter-color-head-box">
+                                                        <p class="bold-txt">РАЗМЕР</p>
+                                                        <p class=""></p>
+                                                    </div>
+                                                </div>
+                                                <ul class="flex row-flex filter-size-box">
+                                                    <li class="flex row-flex filter-size-item">
+                                                        <input type="checkbox">
+                                                        <p>S</p>
+                                                    </li>
+                                                    <li class="flex row-flex filter-size-item">
+                                                        <input type="checkbox">
+                                                        <p>M</p>
+                                                    </li>
+                                                    <li class="flex row-flex filter-size-item">
+                                                        <input type="checkbox">
+                                                        <p>L</p>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                        
+                                            <details class="flex column-flex filter-box">
+                                                <summary class="flex row-flex filter-color-box">                                 
+                                                    <div class="flex row-flex filter-color-head-box">
+                                                        <p class="bold-txt">КАТЕГОРИЯ</p>
+                                                        <p class=""></p>
+                                                    </div>
+                                                    <div class="flex row-flex filter-color-head-box">
+                                                        <div class="filter-color-img"><img src="img/Icon/Default/Plus.svg"></div>
+                                                    </div>
+                                                </summary>
+                                                <ul class="flex row-flex mini-btn-box">
+                                                    <li>
+                                                        <a class="mini-btn-gray">ФОРМАТ А4</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="mini-btn-gray">СУМКИ-БАГЕТЫ</a>
+                                                    </li>
+                                                    <li>                            
+                                                        <a class="mini-btn-gray">МИНИ СУМКИ</a>
+                                                    </li>
+                                                </ul>
+                                            </details>    
+                    
+                                            <details class="flex column-flex filter-box">
+                                                <summary class="flex row-flex filter-color-box">                                 
+                                                    <div class="flex row-flex filter-color-head-box">
+                                                        <p class="bold-txt">ОСОБЕННОСТЬ</p>
+                                                        <p class="count-filter">2</p>
+                                                    </div>
+                                                    <div class="flex row-flex filter-color-head-box">
+                                                        <div class="filter-color-img"><img src="img/Icon/Default/Minus.svg"></div>
+                                                    </div>
+                                                </summary>
+                                                <ul class="flex row-flex mini-btn-box">
+                                                    <li>
+                                                        <p>ОСОБЕННОСТЬ БУДЕТ ТУТ</p>
+                                                    </li>
+                                                </ul>
+                                            </details>    
+                            
+                        
+                                            <div class="flex row-flex filter-btn-box">
+                                                <a class="btn-black">ПОКАЗАТЬ 200 ТОВАРОВ</a>
+                                                <a class="btn-gray">ОЧИСТИТЬ ФИЛЬТРЫ</a>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <!--Тут вертикальная штука-->
+                                        </div>
+                                    </div>     
+                                </div>
+                            </div>
                         </ul>
                     </div>
                 
@@ -737,20 +1222,138 @@
                 spaceBetween: 8,
                 loop: true,
             });
+            var swiper = new Swiper(".miniSwiperNoLoop", {
+                slidesPerView: 3,
+                spaceBetween: 8,
+            });
+            var swiper = new Swiper(".miniSwiperNoLoopProduct", {
+                slidesPerView: 3,
+                spaceBetween: 32,
+            });
         </script>
-    
+
         <script>
-                var swiper = new Swiper(".miniSwiperNoLoop", {
-                    slidesPerView: 3,
-                    spaceBetween: 8,
-                });
-        </script>
-    
-        <script>
-                var swiper = new Swiper(".miniSwiperNoLoopProduct", {
-                    slidesPerView: 3,
-                    spaceBetween: 32,
-                });
+            var modallike = document.getElementById("modallike");
+            var btnlike = document.getElementById("btnlike");
+            var spanlike = document.getElementById("btn-close-like");
+            btnlike.onclick = function() {
+                modallike.style.display = "flex";
+            }
+            spanlike.onclick = function() {
+                modallike.style.display = "none";
+            }
+            window.onclick = function(event) {
+                if (event.target == modallike) {
+                    modallike.style.display = "none";
+                }
+            }
+
+            var modalshop = document.getElementById("modalshop");
+            var modalshopbtn = document.getElementById("modalshopbtn");
+            var spanshop = document.getElementById("btn-close-shop");
+            modalshopbtn.onclick = function() {
+                modalshop.style.display = "flex";
+            }
+            spanshop.onclick = function() {
+                modalshop.style.display = "none";
+            }
+            window.onclick = function(event) {
+                if (event.target == modalshop) {
+                    modalshop.style.display = "none";
+                }
+            }
+
+            var modalSearch = document.getElementById("modalsearch");
+            var btnSearch = document.getElementById("btnsearch");
+            var spanSearch = document.getElementById("btn-close-search");
+            btnSearch.onclick = function() {
+                modalSearch.style.display = "flex";
+                spanSearch.style.display = "flex";
+                btnSearch.style.display = "none";
+                modalshopbtn.style.display = "none";
+                btnlike.style.display = "none";
+            }
+            spanSearch.onclick = function() {
+                modalSearch.style.display = "none";
+                spanSearch.style.display = "none";
+                btnSearch.style.display = "flex";
+                modalshopbtn.style.display = "flex";
+                btnlike.style.display = "flex";
+            }
+            window.onclick = function(event) {
+                if (event.target == modalSearch) {
+                    modalSearch.style.display = "none";
+                }
+            }
+
+            var modalfilterone = document.getElementById("modalfilterone");
+            var modalfilterbtn1 = document.getElementById("modalfilterbtn1");
+            var spanfilter1 = document.getElementById("btn-close-filter1");
+           
+            modalfilterbtn1.onclick = function() {
+                modalfilterone.style.display = "flex";
+            }
+            spanfilter1.onclick = function() {
+                modalfilterone.style.display = "none";
+                console.log(document.getElementById("btn-close-filter1"));
+            }
+            window.onclick = function(event) {
+                if (event.target == modalfilterone) {
+                    modalfilterone.style.display = "none";
+                }
+            }
+
+            var modalburger = document.getElementById("modalburger");
+            var modalburgerbtn = document.getElementById("modalburgerbtn");
+           
+            modalburgerbtn.onclick = function() {
+                if (modalburger.style.display == "flex") {
+                    modalburger.style.display = "none";
+                }
+                else{
+                    modalburger.style.display = "flex";
+                }
+            }
+            window.onclick = function(event) {
+                if (event.target == modalburger) {
+                    modalburger.style.display = "none";
+                }
+            }
+
+            var modalburgerZH = document.getElementById("modalburgerZH");
+            var modalburgerbtnZH = document.getElementById("modalburgerbtnZH");
+            var modalburgerZHc = document.getElementById("modalburgerZHc");
+            modalburgerbtnZH.onmouseover = function() {
+                modalburgerZH.style.display = "flex";
+            }
+            modalburgerZH.onmouseover = function(){
+                modalburgerZH.style.display = "flex";
+            }
+            modalburgerZH.onmouseout  = function(){
+                modalburgerZH.style.display = "none";
+                console.log('Закрылось по функции')
+            }
+            window.onclick = function(event) {
+                if (event.target == modalburgerZH) {
+                    modalburgerZH.style.display = "none";
+                }
+            }
+
+            var modalburgerZHm = document.getElementById("modalburgerZHm");
+            var modalburgerbtnZHm = document.getElementById("modalburgerbtnZHm");            
+            modalburgerbtnZHm.onclick = function() {
+                if (modalburgerZHm.style.display == "flex") {
+                    modalburgerZHm.style.display = "none";
+                }
+                else{
+                    modalburgerZHm.style.display = "flex";
+                }
+            }
+            window.onclick = function(event) {
+                if (event.target == modalburgerZHm) {
+                    modalburgerZHm.style.display = "none";
+                }
+            }
         </script>
     </body>
 </html>
