@@ -237,16 +237,17 @@ section{
 .header-left-box{
     width: 45%;
     gap: 48px;
-    padding: 32px 0px 52px 0px;
 }
 .burger{
     align-items: center;
+    padding: 32px 0px 52px 0px;
 }
 .header-nav-box{
     gap: 32px;
 } 
 .header-nav-item{
     justify-content: flex-end;
+    padding: 32px 0px 52px 0px;
 }
 .header-nav-item p{
     justify-content: flex-end;
@@ -1067,9 +1068,15 @@ summary::-webkit-details-marker {
 /*COOCKIE //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 
 .coockie-main-box{
-    width: 100%;
+    position: fixed;
+    border-top: 1px solid var(--black);
+    background-color: var(--white);
+    bottom: 0;
+    right: 0;
+    width: calc(100% - 40px);
     gap: 4vw;
-    padding: 59px 0;
+    padding: 59px 20px;
+    z-index: 5;
 }
 .coockie-main-box>p{
     width: calc(50% - 3vw);
@@ -1086,6 +1093,7 @@ summary::-webkit-details-marker {
     margin-left: 50px;
     border-radius: 50%;
     overflow: hidden;
+    cursor: pointer;
 }
 
 /* ИЗБРАННОЕ ВЫПАДАШКА  /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
@@ -1103,10 +1111,9 @@ summary::-webkit-details-marker {
 .like-block>a{
     align-self: flex-end;
     position: absolute;
-    bottom: 56px;
-    right: 56px;
+    bottom: 20px;
+    right: 20px;
 }
-
 /* ФИЛЬТРЫ /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 
 .filter-head{
@@ -1164,7 +1171,7 @@ summary::-webkit-details-marker {
 }
 .toggle-checkbox {
     position: absolute;
-    visibility: hidden;
+    display: none;
 }
   
 .toggle-label {
@@ -1225,7 +1232,7 @@ summary::-webkit-details-marker {
     align-items: center;
     height: 32px;
 }
-.one-color-img{
+.one-color-box>li.one-color-img{
     width: 24px;
     height: 24px;
     border-radius: 50%;
@@ -1284,6 +1291,7 @@ details.filter-box {
 .shop-block{
     width: 100%;
     gap: 50px;
+    padding-bottom: 20px;
 }
 .shop-block-main-box{
     width: 100%;
@@ -1326,6 +1334,7 @@ details.filter-box {
     gap: 8px;
 }
 .sticky{
+    background-color: var(--white);
     position: sticky;
     bottom: 0;
     gap: 24px;
@@ -1420,6 +1429,87 @@ footer a, footer p{
     width: 100%;
     height: 360px;
 }
-
-
+/*модальные окна /////////////////////////////////////////////////*/
+.modal50 {
+    display: none; 
+    position: fixed; 
+    z-index: 6;
+    right: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgba(0,0,0,0.4); 
+    justify-content: end;
+}
+.modal-content50 {
+    background-color: var(--white);
+    padding: 20px;
+    border: 1px solid #888;
+    width: 60%;
+    min-height: calc(100% - 42px);
+    height: max-content;
+}
+.modalsearch {
+    display: none; 
+    position: absolute; 
+    z-index: 6;
+    right: 0;
+    top: 130px;
+    width: 100%; 
+    height: max-content; 
+    overflow: auto; 
+    background-color: rgba(0,0,0,0.4); 
+    justify-content: end;
+    border-bottom: 1px solid var(--black);
+}
+#btn-close-search{
+    display: none;
+    width: 32px;
+    height: 32px;
+    margin-left: 0px;
+}
+.modalsearch-content {
+    background-color: var(--white);
+    padding: 20px;
+    width: 100%;
+    min-height: calc(100% - 40px);
+    height: max-content;
+}
+.modalburger {
+    display: none; 
+    position: absolute; 
+    z-index: 6;
+    right: 0;
+    top: 130px;
+    width: 100%; 
+    height: max-content; 
+    overflow: auto; 
+    justify-content: end;
+    border-bottom: 1px solid var(--black);
+}
+.modalburger-content {
+    background-color: var(--white);
+    padding: 20px;
+    width: 100%;
+    height: max-content;
+}
+.modalburgerAll {
+    display: none; 
+    position: absolute; 
+    z-index: 6;
+    right: 0;
+    top: 130px;
+    width: 100%; 
+    height: max-content; 
+    overflow: auto; 
+    justify-content: end;
+    border-bottom: 1px solid var(--black);
+}
+.modalburgerAll-content {
+    background-color: var(--white);
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+}
 
