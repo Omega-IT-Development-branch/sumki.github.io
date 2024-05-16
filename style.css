@@ -308,6 +308,9 @@ section{
 .advantage-item p{
     width: calc(100% - 120px);
 }
+.advantage-img svg:hover path:first-child{
+    fill: var(--black);
+}
 
 /* СЕКЦИЯ ЗАГОЛОВКА /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 
@@ -457,8 +460,30 @@ section{
     margin-bottom: 0;
 }
 .plus-icon{
-    width: 64px;
-    height: 64px;
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    cursor: pointer;
+    padding: 18px;
+}
+.plus-icon:hover{
+    background-color: var(--black);
+    svg path{
+        fill: var(--gray);
+    }
+}
+.plus-icon:disabled{
+    background-color: var(--gray);
+    svg path{
+        fill: var(--black-48);
+    }
+}
+.plus-icon:focus{
+    background-color: var(--black);
+    border: 1px solid var(--red);
+    svg path{
+        fill: var(--gray);
+    }
 }
 
 /* КОНТАКТНАЯ ИНФОРМАЦИЯ ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
@@ -703,6 +728,12 @@ section{
     width: 32px;
     height: 32px;
     padding: 16px;
+}
+.shop-plus-minus-img:hover{
+    background-color: var(--black);
+}
+.shop-plus-minus-img:hover svg path{
+    fill: var(--white);
 }
 .shop-price-box{
     gap: 0px;
