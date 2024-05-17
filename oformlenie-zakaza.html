@@ -10,28 +10,27 @@
         <link rel="stylesheet" href="style480.css" />
 
         <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-      
     </head>
     <body>
         <header class="wrapper content"> 
             <div class="flex row-flex header">
                 <div class="flex row-flex header-left-box">
-                    <div class="flex burger">
+                    <div class="flex burger pointer">
                         <img src="img/Icon/Default/Menu.svg"><!--БУРГЕР-->
                     </div>
 
                     <ul class="flex row-flex header-nav-box">
-                        <li class="flex column-flex header-nav-item ">
-                            <p class="special-text">Выбранно</p>
-                            <p class="bold-txt">ЖЕНСКОЕ</p>
+                        <li class="flex column-flex header-nav-item pointer">
+                            <p class="special-text onClickMenu">Выбрано</p>
+                            <p class="bold-txt onClickMenu">ЖЕНСКОЕ</p>
+                        </li>
+                        <li class="flex column-flex header-nav-item pointer">
+                            <p class="special-text onClickMenu pointer"></p>
+                            <p class="onClickMenu">МУЖСКОЕ</p>
                         </li>
                         <li class="flex column-flex header-nav-item">
-                            <p class="special-text"></p>
-                            <p>МУЖСКОЕ</p>
-                        </li>
-                        <li class="flex column-flex header-nav-item">
-                            <p class="special-text"></p>
-                            <p>АКСЕССУАРЫ</p>
+                            <p class="special-text onClickMenu"></p>
+                            <p class="onClickMenu">АКСЕССУАРЫ</p>
                         </li>
                     </ul>
                 </div>
@@ -46,16 +45,16 @@
 
                 <ul class="flex row-flex header-nav-box-mobile mobile">
                     <li class="flex column-flex header-nav-item-mobile">
-                        <p class="special-text">Выбранно</p>
-                        <p class="bold-txt">ЖЕНСКОЕ</p>
+                        <p class="special-text onClickMenu">Выбранно</p>
+                        <p class="bold-txt onClickMenu">ЖЕНСКОЕ</p>
                     </li>
                     <li class="flex column-flex header-nav-item-mobile">
-                        <p class="special-text"></p>
-                        <p>МУЖСКОЕ</p>
+                        <p class="special-text onClickMenu"></p>
+                        <p class="onClickMenu">МУЖСКОЕ</p>
                     </li>
                     <li class="flex column-flex header-nav-item-mobile">
-                        <p class="special-text"></p>
-                        <p>АКСЕССУАРЫ</p>
+                        <p class="special-text onClickMenu"></p>
+                        <p class="onClickMenu">АКСЕССУАРЫ</p>
                     </li>
                 </ul>
             
@@ -117,14 +116,14 @@
                                 <details class="drop-down-box">
                                     <summary class="flex row-flex drop-down-head">
                                         <p>ДОСТАВКА</p>
-                                        <div><img src="img/Icon/Default/Vector 108.svg"></div>
+                                        <div class="flex"><img src="img/Icon/Default/Vector 108.svg"></div>
                                     </summary>
                                     <p class="drop-down-text gray-txt">Тут будет текст</p>
                                 </details>  
                                 <details class="drop-down-box">
                                     <summary class="flex row-flex drop-down-head">
                                         <p>ТРАНСПОРТНАЯ КОМПАНИЯ</p>
-                                        <div><img src="img/Icon/Default/Vector 108.svg"></div>
+                                        <div class="flex"><img src="img/Icon/Default/Vector 108.svg"></div>
                                     </summary>
                                     <p class="drop-down-text gray-txt">Транспортировка груза в Новосибирске, до дверей Транспортных Компаний указанных на нашем сайте, для Вас бесплатна. Далее Ваш груз следует по тарифам Транспортных Компаний. Стоимость доставки до вашего населенного пункта узнавайте на сайте выбранной Транспортной Компании</p>
                                 </details> 
@@ -266,30 +265,6 @@
             </div>
         </footer>
 
-        <!-- Swiper JS -->
-        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
-        <!-- Initialize Swiper -->
-        <script>
-            var swiper = new Swiper(".miniSwiper", {
-                slidesPerView: 3,
-                spaceBetween: 8,
-                loop: true,
-            });
-        </script>
-    
-        <script>
-                var swiper = new Swiper(".miniSwiperNoLoop", {
-                    slidesPerView: 3,
-                    spaceBetween: 8,
-                });
-        </script>
-    
-        <script>
-                var swiper = new Swiper(".miniSwiperNoLoopProduct", {
-                    slidesPerView: 3,
-                    spaceBetween: 32,
-                });
-        </script>
+        <script src="script.js"></script>
     </body>
 </html>

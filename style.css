@@ -3,7 +3,6 @@
     margin: 0;
     padding: 0;
 }
-
 :root{
     --black: #181818;
     --gray: #EDEDED;
@@ -14,7 +13,6 @@
     --black-88: rgba(24, 24, 24, 0.88);
     --white-48: rgba(255, 255, 255, 0.48);
 }
-
 @font-face {
 	font-family: 'Cormorant-Italic'; 
 	src: url(fonts/Cormorant-Italic.ttf); 
@@ -99,6 +97,9 @@ p, label{
     font-size: 12px;
     font-weight: 200;
     margin-bottom: 8px;
+}
+.pointer{
+    cursor: pointer;
 }
 .flex{
     display: flex;
@@ -192,6 +193,8 @@ section{
     text-align: center;
     font-size: 20px;
     font-weight: 200;
+    font-family: 'Inter-Light'; 
+    cursor: pointer;
 }
 .btn-black:hover{
     background-color: var(--gray);
@@ -213,6 +216,8 @@ section{
     text-align: center;
     font-size: 20px;
     font-weight: 200;
+    font-family: 'Inter-Light'; 
+    cursor: pointer;
 }
 .btn-gray:hover{
     background-color: var(--black);
@@ -444,6 +449,9 @@ section{
 .questions-box details[open] summary:after {
     content: '';
 }
+.questions-box details[open] summary>div>svg>path:last-child {
+    display: none;
+}
 .questions-box details {
     width: 100%;
 }
@@ -466,19 +474,19 @@ section{
     cursor: pointer;
     padding: 18px;
 }
-.plus-icon:hover{
+.questions-item:hover .plus-icon{
     background-color: var(--black);
     svg path{
         fill: var(--gray);
     }
 }
-.plus-icon:disabled{
+.questions-item:disabled .plus-icon{
     background-color: var(--gray);
     svg path{
         fill: var(--black-48);
     }
 }
-.plus-icon:focus{
+.questions-item:focus .plus-icon{
     background-color: var(--black);
     border: 1px solid var(--red);
     svg path{
@@ -591,6 +599,9 @@ section{
 .one-product-additional-box details[open] summary:after {
     content: '';
 }
+.one-product-additional-item details[open] summary>div>svg>path:last-child {
+    display: none;
+}
 .one-product-additional-box summary {
     width: 100%;
 }
@@ -608,8 +619,29 @@ section{
     width: calc(90% - 24px);
 }
 .one-product-plus-icon{
-    width: 24px;
-    height: 24px;
+    width: 16px;
+    height: 16px;
+    padding: 4px;
+    border-radius: 50%;
+}
+.one-product-additional-item:hover .one-product-plus-icon{
+    background-color: var(--black);
+    svg path{
+        fill: var(--gray);
+    }
+}
+.one-product-additional-item:disabled .one-product-plus-icon{
+    background-color: var(--gray);
+    svg path{
+        fill: var(--black-48);
+    }
+}
+.one-product-additional-item:focus .one-product-plus-icon{
+    background-color: var(--black);
+    border: 1px solid var(--red);
+    svg path{
+        fill: var(--gray);
+    }
 }
 .one-product-whatsapp-box{
     gap: 16px;
@@ -675,12 +707,16 @@ section{
     width: 100%;
     margin-bottom: 24px;
 }
-.shop-product-header{
-    width: 33%;
+.shop-product-header:nth-child(1){
+    width: calc(40% - 46px);
 }
-.shop-product-header:last-child,
+.shop-product-header:nth-child(2){
+    width: 25%;
+}
+.shop-product-header:nth-child(3){
+    width: calc(35%);
+}
 .shop-product-header:first-child{
-    width: calc(33% - 46px);
     margin-left: 46px;
 }
 .shop-product-item-box{
@@ -712,6 +748,13 @@ section{
     height: 96px;
     border-radius: 8px;
     margin-right: 8px;
+}
+.shop-block-color .shop-photo-product img{
+    opacity: .4;
+}
+
+.shop-block-color .shop-photo-product:last-child img{
+    opacity: 1;
 }
 .shop-count-box{
     gap: 12px;
@@ -799,10 +842,17 @@ section{
     border-radius: 8px;
     padding: 8px 16px;
 }
+details.drop-down-box[open] summary>div>img{
+    transform: scale(1, -1);
+}
+details.drop-down-box summary>div{
+    align-items: center;
+    justify-content: center;
+}
 .drop-down-head{
     font-size: 20px;
     align-items: center;
-    gap: 24px;
+    gap: 12px;
 }
 .drop-down-text{
     padding-top: 16px;
@@ -844,6 +894,7 @@ summary::-webkit-details-marker {
 .order-check-box-persanal{
     margin: 24px 0;
     gap: 16px;
+    flex-wrap: nowrap;
 }
 .order-btn-block{
     gap: 8px;
@@ -897,8 +948,8 @@ summary::-webkit-details-marker {
 .tab-link{
     justify-content: end;
 }
-.tab-link:first-child>p:last-child{
-    border-bottom: 1px solid var(--red);
+.tab-link:first-child{
+    justify-content: end;
 }
 .tab-content {
     display: none;
@@ -939,6 +990,9 @@ summary::-webkit-details-marker {
 }
 .account-status-item{
     justify-content: end;
+}
+.account-status-item:first-child{
+    border-bottom: 1px solid var(--red);
 }
 .account-order-table{
     font-weight: 400;
@@ -1226,6 +1280,31 @@ summary::-webkit-details-marker {
     width: 32px;
     height: 32px;
 }
+.filter-color-img2{
+    width: 16px;
+    height: 16px;
+    padding: 8px;
+    border-radius: 50%;
+}
+.filter-color-box:hover .filter-color-img2{
+    background-color: var(--black);
+    svg path{
+        fill: var(--gray);
+    }
+}
+.filter-color-box:disabled .filter-color-img2{
+    background-color: var(--gray);
+    svg path{
+        fill: var(--black-48);
+    }
+}
+.filter-color-box:focus .filter-color-img2{
+    background-color: var(--black);
+    border: 1px solid var(--red);
+    svg path{
+        fill: var(--gray);
+    }
+}
 .filter-color-head-box{
     gap: 16px;
 }
@@ -1360,6 +1439,27 @@ details.filter-box {
 .shop-block-plus-icon{
     width: 24px;
     height: 24px;
+    padding: 8px;
+    border-radius: 50%;
+}
+.shop-block-analog-item:hover .shop-block-plus-icon{
+    background-color: var(--black);
+    svg path{
+        fill: var(--gray);
+    }
+}
+.shop-block-analog-item:disabled .shop-block-plus-icon{
+    background-color: var(--gray);
+    svg path{
+        fill: var(--black-48);
+    }
+}
+.shop-block-analog-item:focus .shop-block-plus-icon{
+    background-color: var(--black);
+    border: 1px solid var(--red);
+    svg path{
+        fill: var(--gray);
+    }
 }
 .shop-block-btn-box{
     gap: 8px;

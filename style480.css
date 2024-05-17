@@ -331,17 +331,30 @@
     }
     /*COOCKIE //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
     .coockie-main-box{
-        justify-content: end;
+        width: calc(100% - 32px);
+        justify-content: center;
+        padding: 16px;
+    }
+    .coockie-main-box p{
+        font-size: 12px;
+        margin: 0 auto;
+        margin: 48px 0;
     }
     .btn-close{
         display: none;
     }
     .btn-close-mobile{
+        position: absolute;
         width: 64px;
         height: 64px;
         align-self: end;
+        top: -78px;
+        right: 16px;
         border-radius: 50%;
         overflow: hidden;
+    }
+    .coockie-btn-box{
+        margin: 0 auto;
     }
     .coockie-btn-box a{
         width: 100%;
