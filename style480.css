@@ -30,6 +30,9 @@
         justify-content: space-between;
         overflow-x: scroll;
     } 
+    .header-nav-box-mobile::-webkit-scrollbar{
+        display: none;
+    }
     /*ПЕРВАЯ СЕКЦИЯ СО СЛАЙДЕРОМ ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
     .swiper-main{
         margin-bottom: 16px;
@@ -101,10 +104,28 @@
         justify-content: flex-end;
         border-radius: 8px;
     }
+    .product-name-price{
+        gap: 8px;
+    }
+    .product-name-price p{
+        height: max-content;
+    }
+    .product-name-price p:first-child{
+        height: max-content;
+        max-width: 100%;
+        width: 100%;
+        font-size: 12px;
+    }
+    .product-name-price p:last-child{
+        text-align: start;
+    }
     .product-img{
         width: 100%;
-        height: max-content;
         margin-bottom: 21px;
+        height: 40vh;
+    }
+    .swiper .product-img{
+        height: 20vh;
     }
     .product-name-price{
         justify-content: space-between;
@@ -115,6 +136,7 @@
     .miniSwiperNoLoopProduct .product-item{
         margin-right: 8px!important;
     }
+
     /*Посмотреть еще*/
     .product-add-box{
         width: 100%;
@@ -189,6 +211,11 @@
         width: 24px;
         height: 24px;
     }
+    /*КОНТАКТНАЯ ИНФА ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+    .contact-main-box>h3{
+        order: -1;
+
+    }
     /*СТРАИЦА ТОВАРА //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
     .one-product-main-box{
         width: 100%;
@@ -202,6 +229,9 @@
     .one-product-img-box{
         display: none;
     }
+    .one-product-img{
+        height: auto;
+    }
     .one-product-btn-box{
         margin-bottom: 32px;
     }
@@ -210,6 +240,11 @@
     }
     .one-product-additional-box{
         margin-bottom: 32px;
+    }
+    .one-product-h2{
+        margin-bottom: 24px;
+        font-size: 32px;
+        font-weight: 400;
     }
     /*ПОИСК*/
     .search-product-item{
@@ -260,6 +295,12 @@
     /* ОФОРМИЛЕНИЕ ЗАКАЗА /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
     .order-input{
         width: calc(100%);
+    }
+    .order-result-img{
+        width: calc(33.33% - 8px)!important;
+        height: calc(33.81vw - 8px);
+        border-radius: 8px;
+        overflow: hidden;
     }
     /* ЛИЧНЫЙ КАБИНЕТ /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
     .account-date-period-box{

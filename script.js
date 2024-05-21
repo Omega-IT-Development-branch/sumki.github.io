@@ -18,6 +18,13 @@ if(document.querySelector('.miniSwiper')){
         loop: true,
     });
 }
+if(document.querySelector('.miniSwiper-full')){
+    var swiper = new Swiper(".miniSwiper-full", {
+        slidesPerView: 1,
+        spaceBetween: 8,
+        loop: true,
+    });
+}
 if(document.querySelector('.miniSwiperNoLoop')){
     var swiper = new Swiper(".miniSwiperNoLoop", {
         slidesPerView: 3,
@@ -186,6 +193,16 @@ document.addEventListener('click', e => {
         e.target.parentNode.firstElementChild.innerHTML = "Выбрано";
         e.target.parentNode.lastElementChild.style.fontFamily = "Inter-Medium";
     }
+    else if(e.target.classList.contains("onClickMenu-color")){
+        var children = e.target.parentNode.parentNode.children;
+        for (var i = 0; i < children.length; i++) {
+            children[i].firstElementChild.innerHTML = "";
+            children[i].lastElementChild.style.fontFamily = "Inter-Light";
+        }
+
+        e.target.parentNode.firstElementChild.innerHTML = "Выбран цвет";
+        e.target.parentNode.lastElementChild.style.fontFamily = "Inter-Medium";
+    }
     else if(e.target.classList.contains("onTwoClickMenu")){
         var children = e.target.parentNode.parentNode.parentNode.children;
         for (var i = 0; i < children.length; i++) {
@@ -194,6 +211,16 @@ document.addEventListener('click', e => {
         }
 
         e.target.parentNode.parentNode.firstElementChild.innerHTML = "Выбрано";
+        e.target.parentNode.parentNode.lastElementChild.style.fontFamily = "Inter-Medium";
+    }
+    else if(e.target.classList.contains("onTwoClickMenu-color")){
+        var children = e.target.parentNode.parentNode.parentNode.children;
+        for (var i = 0; i < children.length; i++) {
+            children[i].firstElementChild.innerHTML = "";
+            children[i].lastElementChild.style.fontFamily = "Inter-Light";
+        }
+
+        e.target.parentNode.parentNode.firstElementChild.innerHTML = "Выбран цвет";
         e.target.parentNode.parentNode.lastElementChild.style.fontFamily = "Inter-Medium";
     }
 }                   
