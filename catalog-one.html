@@ -3,55 +3,58 @@
     <head>
         <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1"/>
         <title>S-style</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
         <link rel="stylesheet" href="style.css" />
         <link rel="stylesheet" href="style1024.css" />
         <link rel="stylesheet" href="style960.css" />
         <link rel="stylesheet" href="style480.css" />
+
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     </head>
     <body>
         <header class="wrapper content"> 
             <div class="flex row-flex header">
                 <div class="flex row-flex header-left-box">
-                    <div class="flex burger">
+                    <div class="flex burger pointer">
                         <img src="img/Icon/Default/Menu.svg"><!--БУРГЕР-->
                     </div>
 
                     <ul class="flex row-flex header-nav-box">
-                        <li class="flex column-flex header-nav-item ">
-                            <p class="special-text">Выбранно</p>
-                            <p class="bold-txt">ЖЕНСКОЕ</p>
+                        <li class="flex column-flex header-nav-item pointer">
+                            <p class="special-text onClickMenu">Выбранно</p>
+                            <p class="bold-txt onClickMenu">ЖЕНСКОЕ</p>
                         </li>
-                        <li class="flex column-flex header-nav-item">
-                            <p class="special-text"></p>
-                            <p>МУЖСКОЕ</p>
+                        <li class="flex column-flex header-nav-item pointer">
+                            <p class="special-text onClickMenu"></p>
+                            <p class="onClickMenu">МУЖСКОЕ</p>
                         </li>
-                        <li class="flex column-flex header-nav-item">
-                            <p class="special-text"></p>
-                            <p>АКСЕССУАРЫ</p>
+                        <li class="flex column-flex header-nav-item pointer">
+                            <p class="special-text onClickMenu"></p>
+                            <p class="onClickMenu">АКСЕССУАРЫ</p>
                         </li>
                     </ul>
                 </div>
 
-                <a href="index.html" class="logo-header">S-STYLE</a>
+                <a href="index.html" class="logo-header pointer">S-STYLE</a>
                 
                 <div class="flex row-flex header-right-box">
-                    <a href="#" class="bold-txt">8 (800) 500 28 58</a>
-                    <div class="header-search-icon"><img src="img/Icon/Default/Search.svg"></div>
-                    <div class="header-search-icon"><img src="img/Icon/Default/Bag_8.svg"></div>
+                    <a href="#" class="bold-txt pointer">8 (800) 500 28 58</a>
+                    <div class="header-search-icon pointer"><img src="img/Icon/Default/Search.svg"></div>
+                    <div class="header-search-icon pointer"><img src="img/Icon/Default/Bag_8.svg"></div>
                 </div>
 
                 <ul class="flex row-flex header-nav-box-mobile mobile">
                     <li class="flex column-flex header-nav-item-mobile">
-                        <p class="special-text">Выбранно</p>
-                        <p class="bold-txt">ЖЕНСКОЕ</p>
+                        <p class="special-text onClickMenu">Выбранно</p>
+                        <p class="bold-txt onClickMenu">ЖЕНСКОЕ</p>
                     </li>
                     <li class="flex column-flex header-nav-item-mobile">
-                        <p class="special-text"></p>
-                        <p>МУЖСКОЕ</p>
+                        <p class="special-text onClickMenu"></p>
+                        <p class="onClickMenu">МУЖСКОЕ</p>
                     </li>
                     <li class="flex column-flex header-nav-item-mobile">
-                        <p class="special-text"></p>
-                        <p>АКСЕССУАРЫ</p>
+                        <p class="special-text onClickMenu"></p>
+                        <p class="onClickMenu">АКСЕССУАРЫ</p>
                     </li>
                 </ul>
             
@@ -61,9 +64,9 @@
             <section>
                 <div class="flex column-flex content">
                     <div class="flex row-flex bread-crumbs-catalog-first">
-                        <a class="special-text">ГЛАВНАЯ</a>
+                        <a class="special-text pointer">ГЛАВНАЯ</a>
                         <p class="special-text">/</p>
-                        <a class="special-text">КАТАЛОГ</a>
+                        <a class="special-text pointer">КАТАЛОГ</a>
                         <p class="special-text">:</p>
                     </div>
 
@@ -146,31 +149,6 @@
                 <div class="bottom-img"><img src="img/img.png"></div>
             </div>
         </footer>
-
-        <!-- Swiper JS -->
-        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
-        <!-- Initialize Swiper -->
-        <script>
-            var swiper = new Swiper(".miniSwiper", {
-                slidesPerView: 3,
-                spaceBetween: 8,
-                loop: true,
-            });
-        </script>
-    
-        <script>
-                var swiper = new Swiper(".miniSwiperNoLoop", {
-                    slidesPerView: 3,
-                    spaceBetween: 8,
-                });
-        </script>
-    
-        <script>
-                var swiper = new Swiper(".miniSwiperNoLoopProduct", {
-                    slidesPerView: 3,
-                    spaceBetween: 32,
-                });
-        </script>
+        <script src="script.js"></script>
     </body>
 </html>
