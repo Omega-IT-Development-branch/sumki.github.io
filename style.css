@@ -39,7 +39,13 @@
 }
 .wrapper{
     margin: 0 auto;
-    overflow: hidden;
+    /*overflow: hidden;*/
+}
+body{
+    overflow-x: hidden;  
+}
+header, footer{
+    overflow: hidden;  
 }
 .content{
     margin: 0 auto;
@@ -601,9 +607,7 @@ section{
 }
 .one-product-img-box{
     width: calc(50%);
-    height: 100vh;
     gap: 8px;
-    overflow-y: scroll;
     flex-wrap: nowrap;
 }
 .one-product-img{
@@ -613,6 +617,9 @@ section{
 }
 .one-product-info-box{
     width: calc(50% - 108px);
+    position: sticky;
+    top: 5%;
+    height: max-content;
 }
 .one-product-sale-box{
     width: max-content;
@@ -1535,6 +1542,7 @@ details.filter-box {
 }
 .shop-block-one-product a.btn-gray{
     width: calc(100% - 96px - 200px - 16px - 64px);
+    height: 32px;
 }
 .shop-block-color{
     width: 100%;
