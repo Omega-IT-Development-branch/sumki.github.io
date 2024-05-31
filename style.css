@@ -311,6 +311,7 @@ section{
     height: 70vh;
     margin-bottom: 24px;
     position: relative;
+    border-radius: 8px;
 }
 .title-abs{
     position: absolute;
@@ -358,7 +359,7 @@ section{
     width: calc(100% - 120px);
     text-transform: uppercase;
 }
-.advantage-img svg:hover path:first-child{
+.advantage-item:last-child .advantage-img svg:hover path:first-child{
     fill: var(--black);
 }
 
@@ -389,6 +390,8 @@ section{
 .catalog-big-image{
     width: 100%;
     height: 100vh;
+    border-radius: 8px;
+    overflow: hidden;
 }
 .catalog-filter-box{
     justify-content: space-between;
@@ -492,6 +495,8 @@ section{
 }
 .blog-img{
     width: 50%;
+    border-radius: 8px;
+    overflow: hidden;
 }
 .blog-text{
     width: calc(50% - 16.6vw);
@@ -614,6 +619,7 @@ section{
     background-color: var(--gray);
     width: calc(100% - 108px);
     padding: 54px;
+    border-radius: 8px;
 }
 .one-product-info-box{
     width: calc(50% - 108px);
@@ -744,6 +750,7 @@ section{
 .catalog-first-img{
     width: 50%;
     border-radius: 8px;
+    overflow: hidden;
 }
 .catalog-first-text{
     width: calc(50% - 8.3vw);
