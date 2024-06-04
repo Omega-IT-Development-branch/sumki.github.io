@@ -597,6 +597,10 @@ section{
     text-transform: uppercase;
 
 }
+.contact-phone{
+    font-family: 'Cormorant-Regular';
+    font-variant-numeric: lining-nums;
+}
 .contact-item p:nth-child(1){
     width: 60%;
     font-family: 'Inter-Medium';
