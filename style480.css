@@ -20,9 +20,12 @@
         padding: 8px 16px;
     }
     /* HEADER ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/ 
-    .header-left-box,
-    .header-right-box{
+    .header-left-box{
         width: calc(30% - 32px);
+        padding: 0;
+    }
+    .header-right-box{
+        width: calc(40% - 32px);
         padding: 0;
     }
     .header-nav-box-mobile{
@@ -32,6 +35,18 @@
     } 
     .header-nav-box-mobile::-webkit-scrollbar{
         display: none;
+    }
+    #modalshopbtn,#btnlike{
+        display: block;
+    }
+    #btn-close-shop{
+        display: block;
+        width: 56px;
+        height: 56px;
+        margin-left: 50px;
+        border-radius: 50%;
+        overflow: hidden;
+        cursor: pointer;
     }
     /*ПЕРВАЯ СЕКЦИЯ СО СЛАЙДЕРОМ ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
     .swiper-main{
@@ -382,6 +397,9 @@
         margin: 48px 0;
     }
     .btn-close{
+        display: flex;
+    }
+    #btn-close1{
         display: none;
     }
     .btn-close-mobile{
@@ -415,6 +433,11 @@
     /* КОРЗИНА ВСПЛЫВАЮЩАЯ /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
     .shop-block-one-product .shop-photo-product{
         margin-right: calc(100% - 160px);
+    }
+    .shop-block-one-product a.btn-gray {
+        display: block;
+        width: calc(100% - 137px - 48px);
+        height: 40px;
     }
     /* FOOTER /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
     

@@ -33,6 +33,9 @@
     padding: 32px 0px 52px 0px;
     height: max-content;
 }
+#modalshopbtn,#btnlike{
+    display: block;
+}
 .burger{
     padding: 0;
 }
@@ -372,7 +375,7 @@
     width: calc(100%);
 }
 .shop-count-box p{
-    width: 100%;
+    width: 48px;
 }
 .detail-info-text-box{
     width: 100%;
@@ -483,8 +486,17 @@
     margin-bottom: 24px;
 }
 .shop-block-plus-icon{
-    width: 32px;
-    height: 32px;
+    width: 24px;
+    height: 24px;
+}
+.shop-plus-minus-img{
+    width: 24px;
+    height: 24px;
+}
+.shop-block-one-product a.btn-gray {
+    display: block;
+    width: calc(100% - 96px - 176px - 16px - 48px);
+    height: 24px;
 }
 
 /* FOOTER /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
